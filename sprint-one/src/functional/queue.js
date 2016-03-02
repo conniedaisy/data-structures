@@ -16,7 +16,7 @@ var Queue = function() {
     if (index > 0) {
       index --;
     }
-    return storage[index];
+    return storage[0];
   };
 
   someInstance.size = function() {
