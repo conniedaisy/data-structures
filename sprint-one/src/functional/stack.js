@@ -10,7 +10,9 @@ var Stack = function() {
   };
 
   someInstance.pop = function() {
-    index--;
+    if (index > 0){
+      index--;
+    }
   };
 
   someInstance.size = function() {
