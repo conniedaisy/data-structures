@@ -12,3 +12,7 @@ var queueMethods = {};
 queueMethods.size = function() {
   return this.index;
 };
+
+queueMethods.enqueue = function(value) {
+  this.index++;
+};
