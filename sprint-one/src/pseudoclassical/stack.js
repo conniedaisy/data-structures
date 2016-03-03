@@ -13,5 +13,8 @@ Stack.prototype.push = function() {
   this.index++;
 };
 
+Stack.prototype.pop = function() {
+  this.index--;
+};
 
 var someInstance = new Stack();
