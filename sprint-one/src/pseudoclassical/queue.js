@@ -19,7 +19,15 @@ Queue.prototype.enqueue = function(value) {
 
 Queue.prototype.dequeue = function() {
   this.index--;
-  return this.storage[this.index];
+  var result = this.storage[0];
+
+  var count = 1;
+  for (var k in this.storage) {
+    this.storage[k] = this.storage[count];
+    count++;
+  }
+
+  return result;
 };
 
 var someInstance = new Queue();
