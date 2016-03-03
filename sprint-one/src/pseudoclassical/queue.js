@@ -12,5 +12,9 @@ Queue.prototype.enqueue = function(value) {
   this.index++;
 };
 
+Queue.prototype.dequeue = function() {
+  this.index--;
+};
+
 var someInstance = new Queue();
 
