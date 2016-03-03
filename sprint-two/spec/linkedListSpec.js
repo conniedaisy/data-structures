@@ -17,6 +17,7 @@ describe('linkedList', function() {
   });
 
   it('should designate a new tail when new nodes are added', function() {
+    // debugger;
     linkedList.addToTail(4);
     expect(linkedList.tail.value).to.equal(4);
     linkedList.addToTail(5);
