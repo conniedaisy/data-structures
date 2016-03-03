@@ -16,8 +16,11 @@ stackMethods.size = function() {
   return this.index;
 };
 stackMethods.push = function(value) {
+  this[this.index] = value;
   this.index++;
 };
 stackMethods.pop = function() {
+  var result = this[this.index];
   this.index--;
+  return result;
 };
