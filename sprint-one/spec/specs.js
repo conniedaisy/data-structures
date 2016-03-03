@@ -35,6 +35,7 @@ define([
       verifyClass(instantiator).followsPattern(variant, {}, prototypeOfInstances);
 
       it('reports a size of zero for a new stack', function() {
+        debugger;
         expect(stack.size()).to.equal(0);
       });
 
@@ -149,7 +150,6 @@ define([
         queue.enqueue('b');
         expect(queue.dequeue()).to.equal('a');
       });
-
       it('removes the oldest item, after newer items have already been added and removed', function() {
         queue.enqueue('a');
         queue.enqueue('b');
