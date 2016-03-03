@@ -20,7 +20,7 @@ stackMethods.push = function(value) {
   this.index++;
 };
 stackMethods.pop = function() {
-  var result = this[this.index];
   this.index--;
+  var result = this[this.index];
   return result;
 };
