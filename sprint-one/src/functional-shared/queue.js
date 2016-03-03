@@ -19,8 +19,11 @@ queueMethods.size = function() {
 
 queueMethods.enqueue = function(value) {
   this.index++;
+  this[this.index] = value;
 };
 
 queueMethods.dequeue = function() {
+  var result = this[this.index];
   this.index--;
+  return result;
 };
