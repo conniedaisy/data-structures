@@ -6,6 +6,9 @@ var Stack = function() {
 };
 
 Stack.prototype.size = function() {
+  if (this.index < 0) {
+    this.index = 0;
+  }
   return this.index;
 };
 
