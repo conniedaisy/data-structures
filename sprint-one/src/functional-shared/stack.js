@@ -24,7 +24,8 @@ stackMethods.pop = function() {
   if (this.index === 0) {
     return {};
   }
-  return this[index];
+  this.index--;
+  return this[this.index];
 };
 
 
