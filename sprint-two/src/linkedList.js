@@ -43,8 +43,13 @@ var LinkedList = function() {
   };
 
   list.contains = function(target) {
+    for (var i = headNum; i < index; i++) {
+      if (list[i].value === target) {
+        return true;
+      }
+    }
+    return false;
   };
-  console.log(list.tail);
   return list;
 };
 var Node = function(value) {
