@@ -8,5 +8,9 @@ Queue.prototype.size = function() {
   return this.index;
 };
 
+Queue.prototype.enqueue = function(value) {
+  this.index++;
+};
+
 var someInstance = new Queue();
 
