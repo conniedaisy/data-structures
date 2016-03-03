@@ -11,6 +11,9 @@ var Queue = function() {
 var queueMethods = {};
 
 queueMethods.size = function() {
+  if (this.index < 0) {
+    this.index = 0;
+  }
   return this.index;
 };
 
