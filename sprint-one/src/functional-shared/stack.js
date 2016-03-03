@@ -16,6 +16,9 @@ stackMethods.size = function() {
   return this.index; //someInstance.size
 };
 
+stackMethods.push = function() {
+  this.index++;
+};
 
 
 
