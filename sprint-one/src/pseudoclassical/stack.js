@@ -9,5 +9,9 @@ Stack.prototype.size = function() {
   return this.index;
 };
 
+Stack.prototype.push = function() {
+  this.index++;
+};
+
 
 var someInstance = new Stack();
