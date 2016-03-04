@@ -1,9 +1,11 @@
 var Tree = function(value) {
   var newTree = {};
+  newTree.index = 0;
   newTree.value = value;
 
+  newTree.children = [{}];  // fix me
+  _.extend(newTree, treeMethods);
   // your code here
-  newTree.children = null;  // fix me
 
   return newTree;
 };
@@ -11,6 +13,10 @@ var Tree = function(value) {
 var treeMethods = {};
 
 treeMethods.addChild = function(value) {
+  // console.log(this.children);
+  this.children[this.index]['value'] = value; //{}.value = value;
+  // console.log(this.children[this.index]);
+  this.index++;
 };
 
 treeMethods.contains = function(target) {
