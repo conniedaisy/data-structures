@@ -21,7 +21,7 @@ var Graph = function() {
   //index
 };
 
-var someInstance = new Graph();
+// var someInstance = new Graph();
 
 // ------------------------
 // Add a node to the graph, passing in the node's value.
