@@ -63,5 +63,5 @@ binaryMethods.depthFirstLog = function(func) {
  * Complexity: What is the time complexity of the above functions?
  * BinarySearchTree.insert = O(log(n))
  * BinarySearchTree.contains = O(log(n))
- * BinarySearchTree.depthFirstLog = O(n^2)
+ * BinarySearchTree.depthFirstLog = O(n)
  */
